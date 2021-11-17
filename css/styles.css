@@ -108,6 +108,12 @@ img {
 .site-item:focus {
   color: var(--accent-color);
 }
+.cover:hover,
+.envelope:hover,
+.smartphone:hover {
+  color: #2196f3;
+  stroke: #2196f3;
+}
 .envelope {
   width: 16px;
   height: 12px;
@@ -117,24 +123,11 @@ img {
 .social-links a {
   color: var(--primary-text-color);
 }
-.social-links a:hover,
-.social-links a:focus {
-  color: #2196f3;
-  fill: #2196f3;
-}
-.envelope:hover,
-.envelope:focus {
-  fill: #2196f3;
-}
 .smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: var(--primary-text-color);
-}
-.smartphone:hover,
-.smartphone:focus {
-  fill: #2196f3;
 }
 .social-links {
   display: flex;
@@ -148,6 +141,7 @@ img {
   justify-content: center;
 }
 .hero {
+  margin: auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(
       to right,
@@ -317,36 +311,34 @@ img {
   display: flex;
   justify-content: center;
 }
+.net,
+.nets {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
 .one {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
-}
-.net,
-.nets {
-  width: 44px;
-  height: 44px;
   border-radius: 50% 50%;
-  margin-right: 10px;
 }
 .nets {
   margin-right: 0px;
 }
-.net:hover,
-.net:focus,
-.nets:hover,
-.nets:focus {
+.one:hover {
   background-color: #2196f3;
+  stroke: var(--main-background-color);
+  fill: var(--main-background-color);
 }
 .instagram {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
 }
-.instagram:hover,
-.instagram:focus {
+.instagram:hover {
   fill: var(--main-background-color);
 }
 .person {
@@ -377,13 +369,21 @@ img {
 }
 .groups,
 .groups-last {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+.groups:hover,
+.groups-last:hover {
+  border: 1px solid #2196f3;
+}
+.move {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 92px;
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
 }
 .groups {
   margin-right: 30px;
@@ -391,11 +391,9 @@ img {
 .groups-last {
   margin-right: 0px;
 }
-.groups:hover,
-.groups:focus,
-.groups-last:hover,
-.groups-last:focus {
-  border: 1px solid #2196f3;
+.move:hover,
+.move .group:hover {
+  fill: #2196f3;
 }
 .group {
   width: 106px;
@@ -417,6 +415,10 @@ img {
   letter-spacing: 0.03em;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.connection {
+  display: flex;
+  align-items: baseline;
 }
 .logo-footer {
   display: inline-block;
@@ -576,6 +578,9 @@ img {
   margin-bottom: 0px;
   margin-left: 0px;
   width: 370px;
+}
+.basket-item {
+  display: block;
 }
 .basket-item:hover,
 .basket-item:focus {
