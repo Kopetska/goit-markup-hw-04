@@ -109,16 +109,15 @@ img {
   color: var(--accent-color);
 }
 .cover:hover,
-.envelope:hover,
-.smartphone:hover {
+.cover:focus {
   color: #2196f3;
-  stroke: #2196f3;
+  fill: var(--accent-color);
 }
 .envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
 .social-links a {
   color: var(--primary-text-color);
@@ -127,7 +126,7 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
 .social-links {
   display: flex;
@@ -328,18 +327,18 @@ img {
 .nets {
   margin-right: 0px;
 }
-.one:hover {
+.one:hover,
+.one:focus {
   background-color: #2196f3;
-  stroke: var(--main-background-color);
+}
+.one:hover .instagram,
+.one:focus .instagram {
   fill: var(--main-background-color);
 }
 .instagram {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-}
-.instagram:hover {
-  fill: var(--main-background-color);
 }
 .person {
   background-color: var(--main-background-color);
@@ -375,7 +374,9 @@ img {
   border: 1px solid #afb1b8;
 }
 .groups:hover,
-.groups-last:hover {
+.groups-last:hover,
+.groups:focus,
+.groups-last:focus {
   border: 1px solid #2196f3;
 }
 .move {
@@ -391,18 +392,14 @@ img {
 .groups-last {
   margin-right: 0px;
 }
-.move:hover,
-.move .group:hover {
-  fill: #2196f3;
+.move:hover .group,
+.move:focus .group {
+  fill: var(--accent-color);
 }
 .group {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-}
-.group:hover,
-.group:focus {
-  fill: #2196f3;
 }
 .last {
   display: flex;
